@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>BASIC JAVASCRIPT CALCULATOR</nav>
+<form name="calc">
+  <table>
+    <tr>
+      <td>
+        <input type="text" size="16" id="calculator__display" value="0" />
+        <input type="button" name="one" value="1" onclick="addNum(1)"/>
+        <input type="button" name="two" value="2" onclick="addNum(2)" />
+        <input type="button" name="three" value="3" onclick="addNum(3)"/>
+        <input type="button" class="operator" name="plus" value="+"  onclick="addOperator('+')"/>
+        <br>
+        <input type="button" name="four" value="4" onclick="addNum(4)"/>
+        <input type="button" name="five" value="5" onclick="addNum(5)"/>
+        <input type="button" name="six" value="6" onclick="addNum(6)"/>
+        <input type="button" class="operator" name="minus" value="-"  onclick="addOperator('-')"/>
+        <br>
+        <input type="button" name="seven" value="7" onclick="addNum(7)"/>
+        <input type="button" name="eight" value="8" onclick="addNum(8)"/>
+        <input type="button" name="nine" value="9" onclick="addNum(9)"/>
+        <input type="button" class="operator" name="times" value="*" onclick="addOperator('*')" />
+        <br>
+        <input type="button" id="clear" name="clear" value=" C " onclick="clearNum()"/>
+        <input type="button" name="zero" value="0" onclick="addNum(0)"/>
+        <input type="button" name="doit" value=" = " onclick="evalNum()"/>
+        <input type="button" class="operator" name="div" value="/"  onclick="addOperator('/')"/>
+        <br>
+      </td>
+    </tr>
+  </table>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
